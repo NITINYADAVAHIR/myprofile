@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+ 
+        <div class="logo">
+            <h1>
+                nitin
+            </h1>
+
+        </div>
+
+
+        <div class="navmenu">
+            <ul class="navbar">
+
+                <li>
+                    <a href="index.html"><i class="p-2 fas fa-home"></i>home</a>
+                </li>
+                <li>
+                    <a href="aboutus.html"><i class="p-2 fas fa-user"></i>about  </a>
+                </li>
+                <li>
+                    <a href=""><i class="p-2 fas fa-book"></i>skills</a>
+                </li>
+                <li>
+                    <a href=""> <i class="p-2 fas fa-tasks"></i>projects </a>
+                </li>
+                <li>
+                    <a href=""><i class="p-2 fas fa-images"></i>gallery</a>
+                </li>
+                <li>
+                    <a href=""><i class="p-2 fas fa-envelope"></i>contact</a>
+                </li>
+            </ul>
+            <div class="connectflex">
+
+                <div>
+                    
+                    <a class="connect" href="https://www.instagram.com/nitinyadaahir/?hl=en"><i class=" fab fa-instagram"></i></a>
+                </div>
+                <div>
+                    
+                    <a  class="connect" href="https://www.linkedin.com/in/nitin-kumar-b61103226"><i class=" fab fa-linkedin"></i></a>
+                </div>
+                <div>
+                    <a  class="connect" href="https://wa.me/7988394441" ><i class=" fab fa-whatsapp"></i></a>
+                    
+                </div>
+                <div id="nitin" class="nitin">
+                    
+                    
+                    
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </label>
+            </div>
+        </div>
+        </div>
+
+
+    </nav>
+    <section class="contact" id="contact">
+        <div class="maxwidth">
+            <h2 class="title">Contact Me</h2>
+            <div class="contactcontent">
+              <div class="left">
+                <div class="text">Always here for you </div>
+                <p> HAVE A WORK ? <br> available on below account  </p>
+                <div class="icon">
+                    <div class="row">
+                        <i class="p-2 fas fa-user"></i>
+                        <div class="info">
+                            <div class="head">NAME</div>
+                            <div class="subtitle">nitin kumar</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="p-2 fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">ADDRESS</div>
+                            <div class="subtitle">VILL - ASIYAKI -PACHOR , REWARI HARYANA ,INDIA </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="p-2 fas fa-phone"></i>
+                        <div class="info">
+                            <div class="head">MOBILE NO </div>
+                            <div class="subtitle">7988394441</div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="right">
+              
+              </div>
+            </div>
+        </div>
+    </section>
+    <script >
+        const navslide = () => {
+    const nitin = document.querySelector('.nitin');
+    const nav = document.querySelector('.navbar');
+    const navlinks = document.querySelectorAll('.navbar li ');
+    nitin.addEventListener('click',() => {
+        nav.classList.toggle('nav-active');
+        navlinks.forEach((link,index) => {
+      if(link.style.animation){
+        link.style.animation = '';
+      }else{
+        link.style.animation = 'navlinkfade 0.5s ease forward  ${index / 7 + 1.5}s';
+      }
+        })
+    
+    });
+    
+}
+navslide()
+    </script>
+</body>
+
+</html>
